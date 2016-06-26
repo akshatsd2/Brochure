@@ -13,7 +13,7 @@
 @implementation ApiRequest
 
 
--(void)sendGETRequestWithURL:(NSString *)requestURL withParameters:(NSString *)parameters displayHUD:(BOOL)displayHUD withAccess_token:(NSString *)access_token
+-(void)sendGETRequestWithURL:(NSString *)page displayHUD:(BOOL)displayHUD withAccess_token:(NSString *)access_token
 {
     
     if (HUD == nil && displayHUD){
@@ -24,15 +24,8 @@
     if(displayHUD && HUD.alpha !=1){
         [HUD showAnimated:YES];
     }
-    
-    NSURL *completeURL;
-    
-    if(parameters!=nil)
-        completeURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@%@", kServerURL, requestURL, parameters]];
-    else
-        completeURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", kServerURL, requestURL]];
-    
-    NSLog(@"request url %@",requestURL);
+    NSString *url = [NSString stringWithFormat:kGetArticle,page];
+    NSURL *completeURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", kServerURL, url]];
     NSLog(@"complete url %@",completeURL);
     
     NSMutableURLRequest *APIRequest = [NSMutableURLRequest requestWithURL:completeURL];
@@ -47,7 +40,7 @@
                 
                 if (connectionError.code == NSURLErrorUserCancelledAuthentication) {
                     
-                    [self parseAndForwardResponse:data:@"GET"];
+                    [self parseAndForwardResponse:data:page];
                 }
                 else
                 {
@@ -68,8 +61,7 @@
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 if (connectionError != nil) {
                     if (connectionError.code == NSURLErrorUserCancelledAuthentication) {
-                        [self parseAndForwardResponse:data:@"GET"];
-                        
+                        [self parseAndForwardResponse:data:page];
                     }
                     else
                     {
@@ -98,7 +90,7 @@
 }
 
 
--(void)parseAndForwardResponse:(NSData *)data : (NSString*) requestType
+-(void)parseAndForwardResponse:(NSData *)data : (NSString*) page
 {
     NSError *jsonParsingError = nil;
     
@@ -114,8 +106,9 @@
     }
     
     if (receivedResponse != nil) {
-         if([requestType isEqualToString:@"GET"])
-            [self.delegate GETResponseReceived:receivedResponse];
+        [user_defaults setObject:page forKey:@"last_page"];
+        [user_defaults synchronize];
+        [self.delegate GETResponseReceived:receivedResponse];
     }
     else
     {

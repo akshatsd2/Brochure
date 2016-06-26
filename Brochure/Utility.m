@@ -8,6 +8,7 @@
 
 #import "Utility.h"
 #import "Reachability.h"
+#import "CoreDataManager.h"
 
 static UIAlertView *alert;
 
@@ -32,6 +33,20 @@ static UIAlertView *alert;
     } else {
         return YES;
     }
+}
+
++(BOOL)needsToDownloadArticles{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Articles" inManagedObjectContext:[CoreDataManager sharedInstance].managedObjectContext];
+    
+    [fetchRequest setEntity:entity];
+    
+    NSError *error;
+    NSArray *fetchObject = [[CoreDataManager sharedInstance].managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    if(fetchObject.count>0)
+    {return NO;}
+    return YES;
 }
 
 @end

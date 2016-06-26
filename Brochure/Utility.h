@@ -12,4 +12,5 @@
 
 +(void)showAlertWithTitle:(NSString *)title message:(NSString *)message;
 +(BOOL)isInternetWorking;
++(BOOL)needsToDownloadArticles;
 @end

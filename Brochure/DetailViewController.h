@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  DetailViewController.h
 //  Brochure
 //
 //  Created by Akshat Mittal on 27/06/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UITabBarController
+@interface DetailViewController : UIViewController
 
 @end

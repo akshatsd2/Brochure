@@ -40,6 +40,12 @@
 		0DFAE5B51D20749B00F13F0B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5B41D20749B00F13F0B /* TableViewController.m */; };
 		0DFAE5B81D2074A500F13F0B /* CollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5B71D2074A500F13F0B /* CollectionViewViewController.m */; };
 		0DFAE5BB1D2074AC00F13F0B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5BA1D2074AC00F13F0B /* SettingsViewController.m */; };
+		0DFAE5BE1D20773900F13F0B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5BD1D20773900F13F0B /* MainViewController.m */; };
+		0DFAE5C11D20789400F13F0B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5C01D20789400F13F0B /* DetailViewController.m */; };
+		0DFAE5CC1D207E1C00F13F0B /* Articles+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5C91D207E1C00F13F0B /* Articles+CoreDataProperties.m */; };
+		0DFAE5CD1D207E1C00F13F0B /* Articles.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5CB1D207E1C00F13F0B /* Articles.m */; };
+		0DFAE5D01D2080DD00F13F0B /* BrochureDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5CF1D2080DD00F13F0B /* BrochureDataManager.m */; };
+		0DFAE5D31D208D5000F13F0B /* DataStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5D21D208D5000F13F0B /* DataStructure.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +132,18 @@
 		0DFAE5B71D2074A500F13F0B /* CollectionViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewViewController.m; sourceTree = "<group>"; };
 		0DFAE5B91D2074AC00F13F0B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		0DFAE5BA1D2074AC00F13F0B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		0DFAE5BC1D20773900F13F0B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0DFAE5BD1D20773900F13F0B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0DFAE5BF1D20789400F13F0B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0DFAE5C01D20789400F13F0B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		0DFAE5C81D207E1C00F13F0B /* Articles+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Articles+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0DFAE5C91D207E1C00F13F0B /* Articles+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Articles+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0DFAE5CA1D207E1C00F13F0B /* Articles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Articles.h; sourceTree = "<group>"; };
+		0DFAE5CB1D207E1C00F13F0B /* Articles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Articles.m; sourceTree = "<group>"; };
+		0DFAE5CE1D2080DD00F13F0B /* BrochureDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrochureDataManager.h; sourceTree = "<group>"; };
+		0DFAE5CF1D2080DD00F13F0B /* BrochureDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrochureDataManager.m; sourceTree = "<group>"; };
+		0DFAE5D11D208D5000F13F0B /* DataStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
+		0DFAE5D21D208D5000F13F0B /* DataStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStructure.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +197,10 @@
 				0DFAE5351D204C5400F13F0B /* AppDelegate.h */,
 				0DFAE5361D204C5400F13F0B /* AppDelegate.m */,
 				0DFAE53E1D204C5400F13F0B /* Main.storyboard */,
+				0DFAE5BC1D20773900F13F0B /* MainViewController.h */,
+				0DFAE5BD1D20773900F13F0B /* MainViewController.m */,
+				0DFAE5BF1D20789400F13F0B /* DetailViewController.h */,
+				0DFAE5C01D20789400F13F0B /* DetailViewController.m */,
 				0DFAE5B31D20749B00F13F0B /* TableViewController.h */,
 				0DFAE5B41D20749B00F13F0B /* TableViewController.m */,
 				0DFAE5B61D2074A500F13F0B /* CollectionViewViewController.h */,
@@ -190,8 +212,16 @@
 				0DFAE56B1D20541D00F13F0B /* CoreDataManager.h */,
 				0DFAE56C1D20541D00F13F0B /* CoreDataManager.m */,
 				0DFAE56E1D20572700F13F0B /* BrochureDataModel.xcdatamodeld */,
+				0DFAE5C81D207E1C00F13F0B /* Articles+CoreDataProperties.h */,
+				0DFAE5C91D207E1C00F13F0B /* Articles+CoreDataProperties.m */,
+				0DFAE5CE1D2080DD00F13F0B /* BrochureDataManager.h */,
+				0DFAE5CF1D2080DD00F13F0B /* BrochureDataManager.m */,
+				0DFAE5CA1D207E1C00F13F0B /* Articles.h */,
+				0DFAE5CB1D207E1C00F13F0B /* Articles.m */,
 				0DFAE5AD1D20696500F13F0B /* Utility.h */,
 				0DFAE5AE1D20696500F13F0B /* Utility.m */,
+				0DFAE5D11D208D5000F13F0B /* DataStructure.h */,
+				0DFAE5D21D208D5000F13F0B /* DataStructure.m */,
 				0DFAE5411D204C5400F13F0B /* Assets.xcassets */,
 				0DFAE5431D204C5400F13F0B /* LaunchScreen.storyboard */,
 				0DFAE5461D204C5400F13F0B /* Info.plist */,
@@ -413,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DFAE5A71D2057BA00F13F0B /* UIImageView+HighlightedWebCache.m in Sources */,
+				0DFAE5CD1D207E1C00F13F0B /* Articles.m in Sources */,
 				0DFAE59E1D2057BA00F13F0B /* SDWebImageDecoder.m in Sources */,
 				0DFAE5A81D2057BA00F13F0B /* UIImageView+WebCache.m in Sources */,
 				0DFAE5BB1D2074AC00F13F0B /* SettingsViewController.m in Sources */,
@@ -423,9 +454,11 @@
 				0DFAE59F1D2057BA00F13F0B /* SDWebImageDownloader.m in Sources */,
 				0DFAE5B51D20749B00F13F0B /* TableViewController.m in Sources */,
 				0DFAE5B21D206DDE00F13F0B /* MBProgressHUD.m in Sources */,
+				0DFAE5BE1D20773900F13F0B /* MainViewController.m in Sources */,
 				0DFAE59A1D2057BA00F13F0B /* MKAnnotationView+WebCache.m in Sources */,
 				0DFAE59D1D2057BA00F13F0B /* SDWebImageCompat.m in Sources */,
 				0DFAE5A21D2057BA00F13F0B /* SDWebImagePrefetcher.m in Sources */,
+				0DFAE5D31D208D5000F13F0B /* DataStructure.m in Sources */,
 				0DFAE5AF1D20696500F13F0B /* Utility.m in Sources */,
 				0DFAE5A91D2057BA00F13F0B /* UIView+WebCacheOperation.m in Sources */,
 				0DFAE5A51D2057BA00F13F0B /* UIImage+MultiFormat.m in Sources */,
@@ -433,12 +466,15 @@
 				0DFAE5A31D2057BA00F13F0B /* UIButton+WebCache.m in Sources */,
 				0DFAE59C1D2057BA00F13F0B /* SDImageCache.m in Sources */,
 				0DFAE5341D204C5400F13F0B /* main.m in Sources */,
+				0DFAE5CC1D207E1C00F13F0B /* Articles+CoreDataProperties.m in Sources */,
 				0DFAE5701D20572700F13F0B /* BrochureDataModel.xcdatamodeld in Sources */,
+				0DFAE5C11D20789400F13F0B /* DetailViewController.m in Sources */,
 				0DFAE56A1D20525700F13F0B /* ApiRequest.m in Sources */,
 				0DFAE5A41D2057BA00F13F0B /* UIImage+GIF.m in Sources */,
 				0DFAE5B81D2074A500F13F0B /* CollectionViewViewController.m in Sources */,
 				0DFAE59B1D2057BA00F13F0B /* NSData+ImageContentType.m in Sources */,
 				0DFAE5A61D2057BA00F13F0B /* UIImage+WebP.m in Sources */,
+				0DFAE5D01D2080DD00F13F0B /* BrochureDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

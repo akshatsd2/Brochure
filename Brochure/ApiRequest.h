@@ -20,5 +20,6 @@
 }
 @property (nonatomic,weak) id<ApiResponseDelegate> delegate;
 
--(void)sendGETRequestWithURL:(NSString *)requestURL withParameters:(NSString *)paramters displayHUD:(BOOL)displayHUD withAccess_token:(NSString *)access_token;
+-(void)sendGETRequestWithURL:(NSString *)page displayHUD:(BOOL)displayHUD withAccess_token:(NSString *)access_token;
+
 @end

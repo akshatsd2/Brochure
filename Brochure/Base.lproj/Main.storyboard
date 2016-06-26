@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Main View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="MainViewController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -24,7 +24,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169" y="-214"/>
+            <point key="canvasLocation" x="-543" y="-100"/>
         </scene>
         <!--Table-->
         <scene sceneID="Kc4-6r-Q88">
@@ -40,10 +40,47 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Table" image="Table" selectedImage="Table Selected" id="d2Y-kf-Vh2"/>
+                    <connections>
+                        <segue destination="vc5-Fq-vDc" kind="show" id="AuC-te-6Lo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9yw-ZE-jQJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="913" y="-543"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rMA-by-BYO">
+            <objects>
+                <navigationController id="vc5-Fq-vDc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FmU-8h-D2J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="R3z-xq-coR" kind="show" id="tOK-WM-gB2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Khl-i6-oUX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1658" y="-300"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="JsK-Rt-axe">
+            <objects>
+                <viewController id="R3z-xq-coR" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d6V-dy-0di"/>
+                        <viewControllerLayoutGuide type="bottom" id="amn-Or-R6P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="exQ-yq-0Vc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVu-ne-M3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2291" y="-300"/>
         </scene>
         <!--Collection-->
         <scene sceneID="gPV-SG-1nr">
@@ -59,10 +96,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Collection" image="Collection" selectedImage="Collection Selected" id="M69-W7-xnd"/>
+                    <connections>
+                        <segue destination="vc5-Fq-vDc" kind="show" id="0DJ-Re-ukS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mg8-Lx-qhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="35"/>
+            <point key="canvasLocation" x="913" y="106"/>
         </scene>
         <!--Settings-->
         <scene sceneID="TWo-kX-gsu">
@@ -81,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSR-Ob-4Wd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="998" y="603"/>
+            <point key="canvasLocation" x="923" y="912"/>
         </scene>
     </scenes>
     <resources>
@@ -92,4 +132,7 @@
         <image name="Table" width="27" height="27"/>
         <image name="Table Selected" width="27" height="27"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0DJ-Re-ukS"/>
+    </inferredMetricsTieBreakers>
 </document>

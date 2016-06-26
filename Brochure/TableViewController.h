@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Utility.h"
+#import "ApiRequest.h"
+#import "BrochureDataManager.h"
 
-@interface TableViewController : UIViewController
+@interface TableViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,ApiResponseDelegate>
 
 @end
