@@ -20,7 +20,6 @@
 		0DFAE56D1D20541D00F13F0B /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE56C1D20541D00F13F0B /* CoreDataManager.m */; };
 		0DFAE5701D20572700F13F0B /* BrochureDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE56E1D20572700F13F0B /* BrochureDataModel.xcdatamodeld */; };
 		0DFAE5741D20576100F13F0B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5731D20576100F13F0B /* Reachability.m */; };
-		0DFAE5771D20579B00F13F0B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5761D20579B00F13F0B /* MBProgressHUD.m */; };
 		0DFAE59A1D2057BA00F13F0B /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE57A1D2057BA00F13F0B /* MKAnnotationView+WebCache.m */; };
 		0DFAE59B1D2057BA00F13F0B /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE57C1D2057BA00F13F0B /* NSData+ImageContentType.m */; };
 		0DFAE59C1D2057BA00F13F0B /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE57E1D2057BA00F13F0B /* SDImageCache.m */; };
@@ -37,6 +36,9 @@
 		0DFAE5A71D2057BA00F13F0B /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5951D2057BA00F13F0B /* UIImageView+HighlightedWebCache.m */; };
 		0DFAE5A81D2057BA00F13F0B /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5971D2057BA00F13F0B /* UIImageView+WebCache.m */; };
 		0DFAE5A91D2057BA00F13F0B /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5991D2057BA00F13F0B /* UIView+WebCacheOperation.m */; };
+		0DFAE5AB1D2063D600F13F0B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0DFAE5AA1D2063D600F13F0B /* .gitignore */; };
+		0DFAE5AF1D20696500F13F0B /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5AE1D20696500F13F0B /* Utility.m */; };
+		0DFAE5B21D206DDE00F13F0B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5B11D206DDE00F13F0B /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +84,6 @@
 		0DFAE56F1D20572700F13F0B /* BrochureDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrochureDataModel.xcdatamodel; sourceTree = "<group>"; };
 		0DFAE5721D20576100F13F0B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		0DFAE5731D20576100F13F0B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		0DFAE5751D20579B00F13F0B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		0DFAE5761D20579B00F13F0B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		0DFAE5791D2057BA00F13F0B /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		0DFAE57A1D2057BA00F13F0B /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		0DFAE57B1D2057BA00F13F0B /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -117,6 +117,12 @@
 		0DFAE5971D2057BA00F13F0B /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		0DFAE5981D2057BA00F13F0B /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		0DFAE5991D2057BA00F13F0B /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		0DFAE5AA1D2063D600F13F0B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0DFAE5AC1D2065D000F13F0B /* Brochure-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brochure-Prefix.pch"; sourceTree = "<group>"; };
+		0DFAE5AD1D20696500F13F0B /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		0DFAE5AE1D20696500F13F0B /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		0DFAE5B01D206DDE00F13F0B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0DFAE5B11D206DDE00F13F0B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,11 +185,14 @@
 				0DFAE56B1D20541D00F13F0B /* CoreDataManager.h */,
 				0DFAE56C1D20541D00F13F0B /* CoreDataManager.m */,
 				0DFAE56E1D20572700F13F0B /* BrochureDataModel.xcdatamodeld */,
+				0DFAE5AD1D20696500F13F0B /* Utility.h */,
+				0DFAE5AE1D20696500F13F0B /* Utility.m */,
 				0DFAE5411D204C5400F13F0B /* Assets.xcassets */,
 				0DFAE5431D204C5400F13F0B /* LaunchScreen.storyboard */,
 				0DFAE5461D204C5400F13F0B /* Info.plist */,
 				0DFAE5711D20575600F13F0B /* Third Party */,
 				0DFAE5321D204C5400F13F0B /* Supporting Files */,
+				0DFAE5AA1D2063D600F13F0B /* .gitignore */,
 			);
 			path = Brochure;
 			sourceTree = "<group>";
@@ -192,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				0DFAE5331D204C5400F13F0B /* main.m */,
+				0DFAE5AC1D2065D000F13F0B /* Brochure-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -217,8 +227,8 @@
 		0DFAE5711D20575600F13F0B /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
-				0DFAE5751D20579B00F13F0B /* MBProgressHUD.h */,
-				0DFAE5761D20579B00F13F0B /* MBProgressHUD.m */,
+				0DFAE5B01D206DDE00F13F0B /* MBProgressHUD.h */,
+				0DFAE5B11D206DDE00F13F0B /* MBProgressHUD.m */,
 				0DFAE5721D20576100F13F0B /* Reachability.h */,
 				0DFAE5731D20576100F13F0B /* Reachability.m */,
 				0DFAE5781D2057BA00F13F0B /* SDWebImage */,
@@ -369,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFAE5AB1D2063D600F13F0B /* .gitignore in Resources */,
 				0DFAE5451D204C5400F13F0B /* LaunchScreen.storyboard in Resources */,
 				0DFAE5421D204C5400F13F0B /* Assets.xcassets in Resources */,
 				0DFAE5401D204C5400F13F0B /* Main.storyboard in Resources */,
@@ -405,13 +416,14 @@
 				0DFAE53D1D204C5400F13F0B /* SecondViewController.m in Sources */,
 				0DFAE5741D20576100F13F0B /* Reachability.m in Sources */,
 				0DFAE59F1D2057BA00F13F0B /* SDWebImageDownloader.m in Sources */,
+				0DFAE5B21D206DDE00F13F0B /* MBProgressHUD.m in Sources */,
 				0DFAE59A1D2057BA00F13F0B /* MKAnnotationView+WebCache.m in Sources */,
 				0DFAE59D1D2057BA00F13F0B /* SDWebImageCompat.m in Sources */,
 				0DFAE5A21D2057BA00F13F0B /* SDWebImagePrefetcher.m in Sources */,
+				0DFAE5AF1D20696500F13F0B /* Utility.m in Sources */,
 				0DFAE5A91D2057BA00F13F0B /* UIView+WebCacheOperation.m in Sources */,
 				0DFAE5A51D2057BA00F13F0B /* UIImage+MultiFormat.m in Sources */,
 				0DFAE5371D204C5400F13F0B /* AppDelegate.m in Sources */,
-				0DFAE5771D20579B00F13F0B /* MBProgressHUD.m in Sources */,
 				0DFAE5A31D2057BA00F13F0B /* UIButton+WebCache.m in Sources */,
 				0DFAE53A1D204C5400F13F0B /* FirstViewController.m in Sources */,
 				0DFAE59C1D2057BA00F13F0B /* SDImageCache.m in Sources */,
@@ -563,7 +575,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Brochure/Brochure-Prefix.pch";
 				INFOPLIST_FILE = Brochure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akshat.Brochure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -574,7 +588,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Brochure/Brochure-Prefix.pch";
 				INFOPLIST_FILE = Brochure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.akshat.Brochure;
 				PRODUCT_NAME = "$(TARGET_NAME)";

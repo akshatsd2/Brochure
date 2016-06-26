@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MBProgressHUD.h"
+
+@protocol ApiResponseDelegate <NSObject>
+@optional
+-(void)GETResponseReceived:(id)response;
+@end
 
 @interface ApiRequest : NSObject
+{
+    MBProgressHUD *HUD;
+}
+@property (nonatomic,weak) id<ApiResponseDelegate> delegate;
 
+-(void)sendGETRequestWithURL:(NSString *)requestURL withParameters:(NSString *)paramters displayHUD:(BOOL)displayHUD withAccess_token:(NSString *)access_token;
 @end

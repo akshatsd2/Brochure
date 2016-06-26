@@ -1,0 +1,27 @@
+//
+//  Brochure-Prefix.pch
+//  Brochure
+//
+//  Created by Akshat Mittal on 27/06/16.
+//  Copyright © 2016 Akshat Mittal. All rights reserved.
+//
+
+#import "AppDelegate.h"
+#import "ApiRequest.h"
+
+#ifndef Brochure_Prefix_pch
+#define Brochure_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define app_delegate (AppDelegate *)[[UIApplication sharedApplication] delegate]
+#define user_defaults [NSUserDefaults standardUserDefaults]
+
+
+//****************************  Web Services *************************************//
+#define kServerURL @"http://www.json-generator.com/api"
+
+#define kGetArticle @"/json/get/bYKqOKXiEO?page=%@"
+
+#endif /* Brochure_Prefix_pch */
