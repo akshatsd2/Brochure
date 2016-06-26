@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0DFAE5341D204C5400F13F0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5331D204C5400F13F0B /* main.m */; };
 		0DFAE5371D204C5400F13F0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5361D204C5400F13F0B /* AppDelegate.m */; };
-		0DFAE53A1D204C5400F13F0B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5391D204C5400F13F0B /* FirstViewController.m */; };
-		0DFAE53D1D204C5400F13F0B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE53C1D204C5400F13F0B /* SecondViewController.m */; };
 		0DFAE5401D204C5400F13F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFAE53E1D204C5400F13F0B /* Main.storyboard */; };
 		0DFAE5421D204C5400F13F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DFAE5411D204C5400F13F0B /* Assets.xcassets */; };
 		0DFAE5451D204C5400F13F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFAE5431D204C5400F13F0B /* LaunchScreen.storyboard */; };
@@ -39,6 +37,9 @@
 		0DFAE5AB1D2063D600F13F0B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0DFAE5AA1D2063D600F13F0B /* .gitignore */; };
 		0DFAE5AF1D20696500F13F0B /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5AE1D20696500F13F0B /* Utility.m */; };
 		0DFAE5B21D206DDE00F13F0B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5B11D206DDE00F13F0B /* MBProgressHUD.m */; };
+		0DFAE5B51D20749B00F13F0B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5B41D20749B00F13F0B /* TableViewController.m */; };
+		0DFAE5B81D2074A500F13F0B /* CollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5B71D2074A500F13F0B /* CollectionViewViewController.m */; };
+		0DFAE5BB1D2074AC00F13F0B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAE5BA1D2074AC00F13F0B /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +64,6 @@
 		0DFAE5331D204C5400F13F0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0DFAE5351D204C5400F13F0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0DFAE5361D204C5400F13F0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0DFAE5381D204C5400F13F0B /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		0DFAE5391D204C5400F13F0B /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		0DFAE53B1D204C5400F13F0B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		0DFAE53C1D204C5400F13F0B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		0DFAE53F1D204C5400F13F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DFAE5411D204C5400F13F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DFAE5441D204C5400F13F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,6 +120,12 @@
 		0DFAE5AE1D20696500F13F0B /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		0DFAE5B01D206DDE00F13F0B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		0DFAE5B11D206DDE00F13F0B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		0DFAE5B31D20749B00F13F0B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		0DFAE5B41D20749B00F13F0B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		0DFAE5B61D2074A500F13F0B /* CollectionViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewViewController.h; sourceTree = "<group>"; };
+		0DFAE5B71D2074A500F13F0B /* CollectionViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewViewController.m; sourceTree = "<group>"; };
+		0DFAE5B91D2074AC00F13F0B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		0DFAE5BA1D2074AC00F13F0B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,11 +178,13 @@
 			children = (
 				0DFAE5351D204C5400F13F0B /* AppDelegate.h */,
 				0DFAE5361D204C5400F13F0B /* AppDelegate.m */,
-				0DFAE5381D204C5400F13F0B /* FirstViewController.h */,
-				0DFAE5391D204C5400F13F0B /* FirstViewController.m */,
-				0DFAE53B1D204C5400F13F0B /* SecondViewController.h */,
-				0DFAE53C1D204C5400F13F0B /* SecondViewController.m */,
 				0DFAE53E1D204C5400F13F0B /* Main.storyboard */,
+				0DFAE5B31D20749B00F13F0B /* TableViewController.h */,
+				0DFAE5B41D20749B00F13F0B /* TableViewController.m */,
+				0DFAE5B61D2074A500F13F0B /* CollectionViewViewController.h */,
+				0DFAE5B71D2074A500F13F0B /* CollectionViewViewController.m */,
+				0DFAE5B91D2074AC00F13F0B /* SettingsViewController.h */,
+				0DFAE5BA1D2074AC00F13F0B /* SettingsViewController.m */,
 				0DFAE5681D20525700F13F0B /* ApiRequest.h */,
 				0DFAE5691D20525700F13F0B /* ApiRequest.m */,
 				0DFAE56B1D20541D00F13F0B /* CoreDataManager.h */,
@@ -410,12 +415,13 @@
 				0DFAE5A71D2057BA00F13F0B /* UIImageView+HighlightedWebCache.m in Sources */,
 				0DFAE59E1D2057BA00F13F0B /* SDWebImageDecoder.m in Sources */,
 				0DFAE5A81D2057BA00F13F0B /* UIImageView+WebCache.m in Sources */,
+				0DFAE5BB1D2074AC00F13F0B /* SettingsViewController.m in Sources */,
 				0DFAE56D1D20541D00F13F0B /* CoreDataManager.m in Sources */,
 				0DFAE5A01D2057BA00F13F0B /* SDWebImageDownloaderOperation.m in Sources */,
 				0DFAE5A11D2057BA00F13F0B /* SDWebImageManager.m in Sources */,
-				0DFAE53D1D204C5400F13F0B /* SecondViewController.m in Sources */,
 				0DFAE5741D20576100F13F0B /* Reachability.m in Sources */,
 				0DFAE59F1D2057BA00F13F0B /* SDWebImageDownloader.m in Sources */,
+				0DFAE5B51D20749B00F13F0B /* TableViewController.m in Sources */,
 				0DFAE5B21D206DDE00F13F0B /* MBProgressHUD.m in Sources */,
 				0DFAE59A1D2057BA00F13F0B /* MKAnnotationView+WebCache.m in Sources */,
 				0DFAE59D1D2057BA00F13F0B /* SDWebImageCompat.m in Sources */,
@@ -425,12 +431,12 @@
 				0DFAE5A51D2057BA00F13F0B /* UIImage+MultiFormat.m in Sources */,
 				0DFAE5371D204C5400F13F0B /* AppDelegate.m in Sources */,
 				0DFAE5A31D2057BA00F13F0B /* UIButton+WebCache.m in Sources */,
-				0DFAE53A1D204C5400F13F0B /* FirstViewController.m in Sources */,
 				0DFAE59C1D2057BA00F13F0B /* SDImageCache.m in Sources */,
 				0DFAE5341D204C5400F13F0B /* main.m in Sources */,
 				0DFAE5701D20572700F13F0B /* BrochureDataModel.xcdatamodeld in Sources */,
 				0DFAE56A1D20525700F13F0B /* ApiRequest.m in Sources */,
 				0DFAE5A41D2057BA00F13F0B /* UIImage+GIF.m in Sources */,
+				0DFAE5B81D2074A500F13F0B /* CollectionViewViewController.m in Sources */,
 				0DFAE59B1D2057BA00F13F0B /* NSData+ImageContentType.m in Sources */,
 				0DFAE5A61D2057BA00F13F0B /* UIImage+WebP.m in Sources */,
 			);
