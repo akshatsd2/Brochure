@@ -13,7 +13,7 @@
 @end
 
 
-@implementation Article
+@implementation ArticleDB
 
 -(id)init{
     

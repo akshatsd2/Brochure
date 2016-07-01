@@ -49,4 +49,51 @@ static UIAlertView *alert;
     return YES;
 }
 
++(UIImage*)scalingAndCroppingImageForSize:(CGSize)targetSize imageToModified:(UIImage*)sourceImage
+{
+    UIImage *newImageFormed = nil;
+    CGFloat width = sourceImage.size.width;
+    CGFloat height = sourceImage.size.height;
+    
+    CGFloat changeFactor = 0.0;
+    CGFloat scaledW = targetSize.width;
+    CGFloat scaledH = targetSize.height;
+    CGPoint thumbnailPoint = CGPointMake(0.0,0.0);
+    
+    if (CGSizeEqualToSize(sourceImage.size, targetSize) == NO)
+    {
+        CGFloat widthF = targetSize.width / width;
+        CGFloat heightF = targetSize.height / height;
+        
+        if (widthF > heightF)
+            changeFactor = widthF; // fit height
+        else
+            changeFactor = heightF; // fit width
+        scaledW = width * changeFactor;
+        scaledH = height * changeFactor;
+        
+        if (widthF > heightF)
+        {
+            thumbnailPoint.y = (targetSize.height - scaledH) * 0.5;
+        }
+        else if (widthF < heightF)
+        {
+            thumbnailPoint.x = (targetSize.width - scaledW) * 0.5;
+        }
+    }
+    UIGraphicsBeginImageContextWithOptions(targetSize, NO, 0.0);
+    
+    CGRect imageRect = CGRectZero;
+    imageRect.origin = thumbnailPoint;
+    imageRect.size.width = scaledW;
+    imageRect.size.height = scaledH;
+    
+    [sourceImage drawInRect: imageRect];
+    newImageFormed = UIGraphicsGetImageFromCurrentImageContext();
+    if(newImageFormed == nil)
+        NSLog(@"Could not scale image");
+    
+    UIGraphicsEndImageContext();
+    return newImageFormed;
+}
 @end

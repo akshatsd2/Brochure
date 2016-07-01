@@ -11,6 +11,13 @@
 #import "ApiRequest.h"
 #import "BrochureDataManager.h"
 
-@interface TableViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,ApiResponseDelegate>
-
+@interface TableViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,ApiResponseDelegate,UITabBarControllerDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *pageTitle;
+@property BOOL isRequesting;
+@property int nextArticleID;
+@property (strong,nonatomic) NSMutableArray *articleArray;
+@property NSUInteger selectedIndex;
+@property (strong,nonatomic) BrochureDataManager *BDM;
+@property BOOL noNewData;
 @end

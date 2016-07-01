@@ -13,4 +13,5 @@
 +(void)showAlertWithTitle:(NSString *)title message:(NSString *)message;
 +(BOOL)isInternetWorking;
 +(BOOL)needsToDownloadArticles;
++(UIImage*)scalingAndCroppingImageForSize:(CGSize)targetSize imageToModified:(UIImage*)sourceImage;
 @end

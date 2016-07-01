@@ -10,4 +10,6 @@
 
 @interface DetailViewController : UIViewController
 
+@property (strong,nonatomic) Articles *selectedArticle;
+
 @end

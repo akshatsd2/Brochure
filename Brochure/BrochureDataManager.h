@@ -14,5 +14,5 @@
 
 -(void)callApiRequest:(NSString*)page;
 +(NSString *)fetchDescriptionOfArticle:(NSNumber*)articleId;
-+(NSArray *)fetchArticlesFrom:(NSNumber*)articleId;
++(NSArray *)fetchArticlesFrom:(int)articleId;
 @end

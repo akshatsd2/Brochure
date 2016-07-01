@@ -13,13 +13,13 @@
 @end
 
 
-@interface Article : NSObject
+@interface ArticleDB : NSObject
 
-@property (nonatomic, strong) NSNumber *article_id;
+@property int article_id;
 @property (nonatomic, strong) NSString *article_title;
 @property (nonatomic, strong) NSString *article_subtitle;
 @property (nonatomic, strong) NSString *article_detailText;
 @property (nonatomic, strong) NSString *article_image;
-@property (nonatomic, strong) NSNumber *article_toShow;
+@property BOOL article_toShow;
 
 @end

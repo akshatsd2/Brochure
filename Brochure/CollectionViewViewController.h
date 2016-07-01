@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Utility.h"
+#import "ApiRequest.h"
+#import "BrochureDataManager.h"
+#import "DetailViewController.h"
 
-@interface CollectionViewViewController : UIViewController
 
+@interface CollectionViewViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UILabel *pageTitle;
+@property BOOL isRequesting;
+@property int nextArticleID;
+@property (strong,nonatomic) NSMutableArray *articleArray;
+@property NSUInteger selectedIndex;
+@property (strong,nonatomic) BrochureDataManager *BDM;
+@property BOOL noNewData;
 @end

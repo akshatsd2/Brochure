@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ApiRequest.h"
+#import "DataStructure.h"
+#import "Articles.h"
+#import "UIImageView+WebCache.h"
 
 #ifndef Brochure_Prefix_pch
 #define Brochure_Prefix_pch
@@ -17,6 +20,9 @@
 
 #define app_delegate (AppDelegate *)[[UIApplication sharedApplication] delegate]
 #define user_defaults [NSUserDefaults standardUserDefaults]
+#define notification_defaults [NSNotificationCenter defaultCenter]
+
+#define kNumberOfArticlesInOnePage 35
 
 
 //****************************  Web Services *************************************//
