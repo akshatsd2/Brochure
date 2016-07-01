@@ -156,7 +156,13 @@
                             <constraint firstItem="0Gm-x6-SGz" firstAttribute="leading" secondItem="exQ-yq-0Vc" secondAttribute="leadingMargin" constant="5" id="xvt-70-8KI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="UEu-ly-beD"/>
+                    <navigationItem key="navigationItem" id="UEu-ly-beD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="kbO-sA-Ox7">
+                            <connections>
+                                <action selector="deleteArticle:" destination="R3z-xq-coR" id="9Rt-Tm-Lnd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="articleDetailText" destination="0Gm-x6-SGz" id="g1j-vR-xmB"/>
                         <outlet property="articleHeight" destination="2RI-na-hkI" id="xJE-m1-2zI"/>

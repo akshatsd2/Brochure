@@ -8,7 +8,6 @@
 
 #import "BrochureDataManager.h"
 #import "CoreDataManager.h"
-#import "Articles+CoreDataProperties.h"
 
 @implementation BrochureDataManager
 

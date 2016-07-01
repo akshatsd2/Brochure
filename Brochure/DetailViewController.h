@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Utility.h"
+#import "CoreDataManager.h"
+
 
 @interface DetailViewController : UIViewController
 

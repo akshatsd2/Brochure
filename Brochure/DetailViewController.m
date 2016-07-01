@@ -58,10 +58,20 @@
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)deleteArticle:(id)sender {
+    self.selectedArticle.article_toShow = @NO;
+    NSError *error = nil;
+    if (![[CoreDataManager sharedInstance].managedObjectContext save:&error])
+    {
+        [Utility showAlertWithTitle:@"Error!" message:@"Error in deleting the article"];
+    }
+    else{
+        [Utility showAlertWithTitle:@"Success!" message:@"Article deleted Successfully"];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+
 }
+
 
 /*
 #pragma mark - Navigation
