@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:YES];
+    if(![user_defaults objectForKey:@"fontSizeTitle"])
+        [user_defaults setObject:@"14" forKey:@"fontSizeTitle"];
+    if(![user_defaults objectForKey:@"fontSizeSubTitle"])
+        [user_defaults setObject:@"14" forKey:@"fontSizeSubTitle"];
+    [user_defaults synchronize];
+    
 }
 
 - (void)didReceiveMemoryWarning {

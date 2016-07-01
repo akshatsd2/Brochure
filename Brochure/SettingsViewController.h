@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Utility.h"
 
 @interface SettingsViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *fontSizeOfTitle;
+@property (weak, nonatomic) IBOutlet UIStepper *stepperOfTitle;
+
+@property (weak, nonatomic) IBOutlet UIStepper *stepperOfSubTitle;
+
+@property (weak, nonatomic) IBOutlet UILabel *fontSizeOfSubtitle;
 
 @end

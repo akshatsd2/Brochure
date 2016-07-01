@@ -17,12 +17,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:YES];
+    self.stepperOfSubTitle.userInteractionEnabled = YES;
+    self.stepperOfTitle.userInteractionEnabled = YES;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    int titleFont = [[user_defaults objectForKey:@"fontSizeTitle"]integerValue];
+    int subTitleFont = [[user_defaults objectForKey:@"fontSizeSubTitle"]integerValue];
+    
+    self.fontSizeOfTitle.text = [NSString stringWithFormat:@"%d",titleFont];
+    self.fontSizeOfSubtitle.text = [NSString stringWithFormat:@"%d",subTitleFont];
+    self.stepperOfTitle.value = titleFont;
+    self.stepperOfSubTitle.value = subTitleFont;
+    
+}
+
+- (IBAction)titleFontChanged:(UIStepper*)sender {
+    double value = [sender value];
+    self.fontSizeOfTitle.text = [NSString stringWithFormat:@"%d",(int)value];
+}
+
+
+- (IBAction)subtitleFontChanged:(UIStepper*)sender {
+    double value = [sender value];
+    self.fontSizeOfSubtitle.text = [NSString stringWithFormat:@"%d",(int)value];
+}
+
+
+- (IBAction)doneClicked:(id)sender {
+    [user_defaults setObject:self.fontSizeOfTitle.text forKey:@"fontSizeTitle"];
+    [user_defaults setObject:self.fontSizeOfSubtitle.text forKey:@"fontSizeSubTitle"];
+    [user_defaults synchronize];
+    [Utility showAlertWithTitle:@"Success!" message:@"Font Size Updated Successfully!"];
+}
+
 
 /*
 #pragma mark - Navigation

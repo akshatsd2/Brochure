@@ -24,7 +24,10 @@
     
 }
 -(void)viewWillAppear:(BOOL)animated{
+     self.FontSizeOfTitle =  [[user_defaults objectForKey:@"fontSizeTitle"]integerValue];
+    
     [self.navigationController setNavigationBarHidden:NO];
+     self.titleLabel.font = [UIFont systemFontOfSize:self.FontSizeOfTitle];
     self.titleLabel.text  = self.selectedArticle.article_title;
     self.articleDetailText.text = self.selectedArticle.article_detailText;
     

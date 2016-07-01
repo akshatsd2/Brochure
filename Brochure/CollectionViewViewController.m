@@ -25,6 +25,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+     self.FontSizeOfTitle =  [[user_defaults objectForKey:@"fontSizeTitle"]integerValue];
     if([Utility needsToDownloadArticles]){
         self.isRequesting = YES;
         self.BDM = [[BrochureDataManager alloc]init];
@@ -34,13 +35,13 @@
         self.isRequesting = NO;
         [self loadDateInCollectionView:nil];
     }
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(loadDateInCollectionView:) name:@"data:saved" object:nil];
+    [notification_defaults addObserver:self selector:@selector(loadDateInCollectionView:) name:@"data:saved" object:nil];
     
 }
 
 
 -(void)viewWillDisappear:(BOOL)animated{
-    [[NSNotificationCenter defaultCenter]removeObserver:@"data:saved"];
+    [notification_defaults removeObserver:@"data:saved"];
 }
 
 
@@ -75,6 +76,7 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    [self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
     self.selectedIndex = indexPath.row;
     [self performSegueWithIdentifier:@"detailVC" sender:self];
 

@@ -20,4 +20,5 @@
 @property NSUInteger selectedIndex;
 @property (strong,nonatomic) BrochureDataManager *BDM;
 @property BOOL noNewData;
+@property int FontSizeOfTitle;
 @end

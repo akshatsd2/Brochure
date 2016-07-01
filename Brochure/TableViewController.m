@@ -26,6 +26,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    self.FontSizeOfTitle =  [[user_defaults objectForKey:@"fontSizeTitle"]integerValue];
     if([Utility needsToDownloadArticles]){
         self.isRequesting = YES;
         self.BDM = [[BrochureDataManager alloc]init];
@@ -35,7 +36,7 @@
         self.isRequesting = NO;
         [self loadDataInTable:nil];
     }
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(loadDataInTable:) name:@"data:saved" object:nil];
+    [notification_defaults addObserver:self selector:@selector(loadDataInTable:) name:@"data:saved" object:nil];
 
 }
 
@@ -43,7 +44,7 @@
 
 
 -(void)viewWillDisappear:(BOOL)animated{
-    [[NSNotificationCenter defaultCenter]removeObserver:@"data:saved"];
+    [notification_defaults removeObserver:@"data:saved"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -108,6 +109,7 @@
     UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableIdentifier];
     Articles *article  = [self.articleArray objectAtIndex:indexPath.row];
     cell.textLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+    cell.textLabel.font = [UIFont systemFontOfSize:self.FontSizeOfTitle];
     cell.textLabel.text = article.article_title;
     // cell.textLabel.textColor = [UIColor colorWithRed:195/255.0 green:153/255.0 blue:107/255.0 alpha:1];
     // cell.textLabel.font = [UIFont fontWithName:@"BebasNeue" size:14];
@@ -115,6 +117,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.selectedIndex = indexPath.row;
     [self performSegueWithIdentifier:@"detailVC" sender:self];
 }
