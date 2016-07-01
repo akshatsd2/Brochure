@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Utility.h"
 
 @interface DetailViewController : UIViewController
 
 @property (strong,nonatomic) Articles *selectedArticle;
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *articleImage;
+@property (weak, nonatomic) IBOutlet UITextView *articleDetailText;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *articleHeight;
+
+
 
 @end

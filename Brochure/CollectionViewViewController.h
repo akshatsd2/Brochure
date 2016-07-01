@@ -11,6 +11,7 @@
 #import "ApiRequest.h"
 #import "BrochureDataManager.h"
 #import "DetailViewController.h"
+#import "TableViewController.h"
 
 
 @interface CollectionViewViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -23,4 +24,6 @@
 @property NSUInteger selectedIndex;
 @property (strong,nonatomic) BrochureDataManager *BDM;
 @property BOOL noNewData;
+
+
 @end

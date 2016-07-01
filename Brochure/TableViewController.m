@@ -22,6 +22,7 @@
     self.noNewData  = NO;
     self.articleArray = [[NSMutableArray alloc]init];
     self.tabBarController.delegate = self;
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -151,13 +152,19 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
+//    if([[segue identifier] isEqualToString:@"detailVC"]){
+//        
+//        UINavigationController *nav = segue.destinationViewController;
+//        DetailViewController *svc = [nav.viewControllers objectAtIndex:0];
+//        svc.hidesBottomBarWhenPushed = YES;
+//        svc.selectedArticle = [self.articleArray objectAtIndex:self.selectedIndex];
+//    }
     if([[segue identifier] isEqualToString:@"detailVC"]){
-        
-        UINavigationController *nav = segue.destinationViewController;
-        DetailViewController *svc = [nav.viewControllers objectAtIndex:0];
+        DetailViewController *svc = segue.destinationViewController;
         svc.hidesBottomBarWhenPushed = YES;
         svc.selectedArticle = [self.articleArray objectAtIndex:self.selectedIndex];
     }
+    
 }
 
 #pragma mark TabBar delegate
