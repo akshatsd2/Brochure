@@ -21,4 +21,6 @@
 @property (strong,nonatomic) BrochureDataManager *BDM;
 @property BOOL noNewData;
 @property int FontSizeOfTitle;
+@property (strong,nonatomic) NSMutableArray *articlesToShow;
+@property int countOfDeletedArticles;
 @end

@@ -14,7 +14,7 @@
 #import "TableViewController.h"
 
 
-@interface CollectionViewViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface CollectionViewViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource,UITabBarControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UILabel *pageTitle;
@@ -25,6 +25,8 @@
 @property (strong,nonatomic) BrochureDataManager *BDM;
 @property BOOL noNewData;
 @property int FontSizeOfTitle;
+@property (strong,nonatomic) NSMutableArray *articlesToShow;
 
+@property int countOfDeletedArticles;
 
 @end

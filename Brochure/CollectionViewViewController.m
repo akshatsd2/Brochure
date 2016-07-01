@@ -16,7 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.countOfDeletedArticles = 0;
     [self.navigationController setNavigationBarHidden:YES];
+    if(!self.articleArray){
+        self.articleArray = [[NSMutableArray alloc]init];
+        self.nextArticleID = 0;
+    }
+    else{
+        self.nextArticleID  = self.articleArray.count;
+    }
+    if(!self.articlesToShow)
+        self.articlesToShow = [[NSMutableArray alloc]init];
+    self.tabBarController.delegate = self;
+    [self.navigationController setNavigationBarHidden:YES];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,6 +38,8 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    [self populateArticlesToShow];
+    [self.collectionView reloadData];
      self.FontSizeOfTitle =  [[user_defaults objectForKey:@"fontSizeTitle"]integerValue];
     if([Utility needsToDownloadArticles]){
         self.isRequesting = YES;
@@ -90,6 +105,7 @@
         self.isRequesting = NO;
         if(newArticles.count){
             [self.articleArray addObjectsFromArray:newArticles];
+            [self populateArticlesToShow];
             [self.collectionView reloadData];
         }
         else{
@@ -105,6 +121,7 @@
         if(newArticles.count){
             self.isRequesting = NO;
             [self.articleArray addObjectsFromArray:newArticles];
+            [self populateArticlesToShow];
             [self.collectionView reloadData];
         }
         else{
@@ -117,10 +134,20 @@
     }
     else{
         self.isRequesting = NO;
-        [Utility showAlertWithTitle:@"Bump" message:@"No New Data!"];
+//        [Utility showAlertWithTitle:@"Bump" message:@"No New Data!"];
     }
 }
 
+-(void)populateArticlesToShow{
+    self.articlesToShow = [[NSMutableArray alloc]init];
+    if(self.articleArray){
+        for(Articles *article in self.articleArray){
+            if([article.article_toShow isEqualToNumber:[NSNumber numberWithInt:1]]){
+                [self.articlesToShow addObject:article];
+            }
+        }
+    }
+}
 
 
 #pragma ScrollView Delegate
@@ -165,7 +192,7 @@
     if([[segue identifier] isEqualToString:@"detailVC"]){
         DetailViewController *svc = segue.destinationViewController;
         svc.hidesBottomBarWhenPushed = YES;
-        svc.selectedArticle = [self.articleArray objectAtIndex:self.selectedIndex];
+        svc.selectedArticle = [self.articlesToShow objectAtIndex:self.selectedIndex];
     }
 }
 
